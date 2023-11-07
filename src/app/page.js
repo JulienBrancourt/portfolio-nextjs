@@ -1,9 +1,11 @@
 "use client"
 // import Link from "next/link"
 import Image from "next/image";
-import Modal from "./components/Modal/Modal";
+import ModalButton from "./components/ModalButton"
+import { useState } from "react";
 
 export default function Home() {
+
   return (
     <main>
       {/* <Link href="/">Home</Link>
@@ -57,9 +59,9 @@ export default function Home() {
             <div class="content">
               <p class="card-location">Bali</p>
               <div class="actions-container">
-                <button class="action-btn">
-                  Voir plus
-                </button>
+            
+          
+                <ModalButton/>
               </div>
             </div>
           </li>
@@ -74,16 +76,14 @@ export default function Home() {
             <div class="content">
               <p class="card-location">edinburgh</p>
               <div class="actions-container">
-                <button class="action-btn">
-                  Voir plus
-                </button>
+                <ModalButton/>
               </div>
             </div>
           </li>
           
         </ul>
       </section>
-      <Modal/>
+       
     </main>
   );
 }

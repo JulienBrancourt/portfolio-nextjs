@@ -1,0 +1,27 @@
+.overlay {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: linear-gradient(45deg,rgba(7, 59, 71,0.8) 50%, rgba(60, 109, 120,0.8) 100%);
+}
+
+.contenu {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background-color: white;
+}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+}
