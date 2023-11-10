@@ -1,0 +1,60 @@
+.clipped-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: clip-path 0.4s ease-in-out;
+}
+
+.card:hover .clipped-img {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%, 100% 100%); 
+}
+.content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 16px;
+  bottom: 15px;
+}
+.card-location {
+  display: block;
+  position: relative;
+  top: 10%;
+  margin-top: auto;
+  font-family: Dosis;
+  font-size: 26px;
+  /* text-align: center; */
+  margin-left: -19px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #e6e6e6;
+  opacity: 0;
+  transition: 
+    transform 0.3s ease-in-out, 
+    opacity 0.3s ease-in-out,
+    letter-spacing 0.7s ease-in-out;
+}
+
+.card:hover .card-location {
+  transform: translateX(10px); 
+  opacity : 1;
+  letter-spacing: 3px;
+}
+.actions-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.action-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.action-btn img {
+  width: 75%;
+}
