@@ -1,51 +1,17 @@
 "use client"
 import React, { useState } from "react";
-// import Link from "next/link"
 import Image from "next/image";
-// import ModalButton from "./components/ModalButton"
-import ProjectCard from "./components/ProjectCard";
 import ModalContent from "./components/ModalContent"
-// import { useState } from "react";
+import Card from './components/Card/Card'
 
 export default function Home() {
-
-    const ProjectList = () => {
-    const projects = [
-      { id: 1, name: 'booki', details: 'un projet top' }, 
-      { id: 2, name: 'nounou', details: 'un projet top aussi' }
-    ];
-
-    const [selectedProject, setSelectedProject] = useState(null);
-
-    const handleClick = (projectId) => {
-      setSelectedProject(projects.find((project) => project.id === projectId));
-    };
-
-    // N'oubliez pas de retourner quelque chose
-    return (
-      <ul className="card-list">
-        {projects.map((project) => (
-          <li key={project.id}>
-            <ProjectCard
-              projectId={project.id}
-              projectName={project.name}
-              onClick={handleClick}
-            />
-          </li>
-        ))}
-
-        {selectedProject && (
-          <li key={selectedProject.id}>
-            {/* Affichez les détails du projet dans votre modale ici */}
-            <Modal>
-              <h1>{selectedProject.name}</h1>
-              <p>{selectedProject.details}</p>
-            </Modal>
-          </li>
-        )}
-      </ul>
-    );
-    };
+  const [profiles, updateProfiles] = useState([
+            { id: 1, name: "Sophia Anderson", role: "Frontend Engineer", skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"], profilePic: "./assets/bali.jpg" },
+            { id: 2, name: "Isabella Sullivan", role: "Senior Java Developer", skills: ["Java", "Spring Boot", "Spring Framework", "Maven"], profilePic: "./assets/kyoto.jpg" },
+            { id: 3, name: "Ava Reynolds", role: "Backend Developer", skills: ["Node.js", "Express", "MongoDB", "Nest.js"], profilePic: "./assets/lisbon.jpg" },
+            { id: 4, name: "Olivia Thompson", role: "Blockchain Developer", skills: ["Web3", "JavaScript", "Solidity", "Rust", "Smart contracts"], profilePic: "./assets/rome.jpg"},    
+  ])
+    
   
   return (
     <main>
@@ -54,25 +20,25 @@ export default function Home() {
       <Link href="/contact">Contact</Link> */}
       <section className="presentation">
         <div className="logo">
-          <div class="global">
-            <div class="detail">
-              <span class="txt">JB</span>
-              <span class="one h6"></span>
-              <span class="two h3"></span>
+          <div className="global">
+            <div className="detail">
+              <span className="txt">JB</span>
+              <span className="one h6"></span>
+              <span className="two h3"></span>
             </div>
           </div>
     
-          <div class="global pivot1">
-            <div class="detail">
-              <span class="one h1"></span>
-              <span class="two h4"></span>
+          <div className="global pivot1">
+            <div className="detail">
+              <span className="one h1"></span>
+              <span className="two h4"></span>
             </div>
           </div>
         
-          <div class="global pivot2">
-            <div class="detail">
-              <span class="one h5"></span>
-              <span class="two h2"></span>
+          <div className="global pivot2">
+            <div className="detail">
+              <span className="one h5"></span>
+              <span className="two h2"></span>
             </div>
           </div>
         </div>
@@ -88,40 +54,20 @@ export default function Home() {
       </section>
 
       <section className="projets">
-        {/*<ul class="card-list">
-           <li class="card">
-            <Image
-              class="clipped-img"
-              src="/assets/bali.jpg"
-              width={500}
-              height={500}
-              alt="image de bali"
-            />
-            <div class="content">
-              <p class="card-location">Bali</p>
-              <div class="actions-container">
-            
-          
-                <ModalButton/>
-              </div>
-            </div>
-          </li>
-          <li class="card">
-            <Image
-              class="clipped-img"
-              src="/assets/edinburgh.jpg"
-              width={500}
-              height={500}
-              alt="image de bali"
-            />
-            <div class="content">
-              <p class="card-location">edinburgh</p>
-              <div class="actions-container">
-                <ModalButton/>
-              </div>
-            </div>
-          </li> */}
-          <ProjectList />
+        <ul className="profile-list">
+          {profiles.map(profile => (
+            <li key={profile.id}>
+              <Card
+                id={profile.id}
+                name={profile.name}
+                skills={profile.skills}
+                role={profile.role}
+                profilePic={profile.profilePic}
+              />
+            </li>
+          ))}
+        </ul>
+        
       </section>
        
     </main>
