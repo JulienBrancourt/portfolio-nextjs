@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Card from './components/Card/Card'
+import Contact from "./components/Contact/Contact";
 
 export default function Home() {
   const [profiles, updateProfiles] = useState([
@@ -69,7 +70,7 @@ export default function Home() {
       </section>
 
       <section className="contact">
-
+            <Contact/>
       </section>
        
     </main>
