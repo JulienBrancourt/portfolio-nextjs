@@ -1,6 +1,5 @@
 "use client"
 import React from 'react';
-import Image from "next/image";
 import './Card.css'
 import Modal from '../Modal/Modal';
 import { useState } from 'react';
@@ -13,13 +12,10 @@ const Card = ({ id, name, profilePic, skills, role }) => {
   return (
     <>  
         <div className="card">
-            {/* <div className="number">{id}</div>  */}
             <img
               className="clipped-img"
-              // width={500}
-              // height={500}
               src={profilePic}
-              alt="profile picture"
+              alt="image du projet"
             />
             <div className="content">
                 <p className="name">{name}</p>

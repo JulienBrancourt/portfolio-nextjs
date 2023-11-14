@@ -52,13 +52,11 @@ body {
 span.one{
   position:absolute;
   width:4px;height:0%;
-  /* z-index:5; */
 }
 
 span.two{
     position:absolute;
     width:4px;height:0%;
-    /* z-index:5; */
 }
 
 .h1{left:0;
@@ -103,55 +101,31 @@ span.two{
 @keyframes load1 {
   0%{bottom:0;height:0}
   100%{bottom:0;height:100%}
-  /* 50%{top:0;height:100%} */
-  /* 100%{top:0;height:100%} */
-  /* 59.944444433%{top:0;height:0} */
-/*   91.6666667%{top:0;height:0%;} */
 }
 
 @keyframes load2 {
   0%{top:0;height:0}
   100%{top:0;height:100%}
-  /* 50%{bottom:0;height:100%} */
-  /* 100%{bottom:0;height:100%} */
-  /* 59.944444433%{bottom:0;height:0} */
-/*   91.6666667%{bottom:0;height:0%} */
 }
 
 @keyframes load3 {
   0%{top:0;height:0}
   100%{top:0;height:100%}
-  /* 50%{bottom:0;height:100%} */
-  /* 100%{bottom:0;height:100%} */
-  /* 59.94444443%{bottom:0;height:0} */
-/*   91.6666667%{bottom:0;height:0%;} */
 }
 
 @keyframes load4 {
   0%{top:0;height:0}
   100%{top:0;height:100%}
-  /* 50%{bottom:0;height:100%} */
-  /* 100%{bottom:0;height:100%} */
-  /* 59.94444443%{bottom:0;height:0} */
-/*   91.6666667%{bottom:0;height:0%;} */
 }
 
 @keyframes load5 {
   0%{bottom:0;height:0}
   100%{bottom:0;height:100%}
-  /* 50%{top:0;height:100%} */
-  /* 100%{top:0;height:100%} */
-  /* 59.94444443%{top:0;height:0} */
-/*   91.6666667%{top:0;height:0%;} */
 }
 
 @keyframes load6 {
   0%{bottom:0;height:0}
   100%{bottom:0;height:100%}
-  /* 50%{top:0;height:100%} */
-  /* 100%{top:0;height:100%} */
-  /* 59.94444443%{top:0;height:0} */
-/*   91.6666667%{top:0;height:0%;} */
 }
 
 .txt {

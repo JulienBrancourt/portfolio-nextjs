@@ -16,7 +16,7 @@ const Modal = ({name, profilePic, handleClose, skills, role}) => {
                </ul>
                </div>
             </div>
-            <button className="close-btn" onClick={()=> handleClose()}>Close</button>
+            <button className="close-btn" onClick={()=> handleClose()}>x</button>
         </div>
 
     </div>

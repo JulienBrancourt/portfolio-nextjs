@@ -1,7 +1,5 @@
 "use client"
 import React, { useState } from "react";
-import Image from "next/image";
-import ModalContent from "./components/ModalContent"
 import Card from './components/Card/Card'
 
 export default function Home() {
@@ -68,6 +66,10 @@ export default function Home() {
           ))}
         </ul>
         
+      </section>
+
+      <section className="contact">
+
       </section>
        
     </main>
