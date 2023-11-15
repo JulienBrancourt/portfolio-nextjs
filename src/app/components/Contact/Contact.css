@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Yeseva+One&display=swap');
+
 .formulaire {
   display: flex;
   flex-direction: column;
@@ -7,7 +9,7 @@
   background: transparent;
   /* backdrop-filter: blur(20px); */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 5px;
   /* opacity: 1; */
   /* transform: translateY(40px); */
   /* &.animate {
@@ -31,7 +33,6 @@ input:focus, textarea:focus {
 
 input::placeholder, textarea::placeholder {
   color: black;
-  font-family: 'Dancing Script', cursive;
   font-size: 16px;
 }
 
@@ -44,7 +45,6 @@ input::placeholder, textarea::placeholder {
   cursor: pointer;
   margin: 10px 80px 25px 80px;
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
-  /* font-family: 'Dancing Script', cursive; */
   font-size: 20px;
 }
 .submit:hover {

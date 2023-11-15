@@ -1,22 +1,46 @@
 "use client"
 import React, { useState } from "react";
+import projetsData from "../data/projetsData.json"
 import Card from './components/Card/Card'
 import Contact from "./components/Contact/Contact";
 
 export default function Home() {
-  const [profiles, updateProfiles] = useState([
-            { id: 1, name: "Sophia Anderson", role: "Frontend Engineer", skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"], profilePic: "./assets/bali.jpg" },
-            { id: 2, name: "Isabella Sullivan", role: "Senior Java Developer", skills: ["Java", "Spring Boot", "Spring Framework", "Maven"], profilePic: "./assets/kyoto.jpg" },
-            { id: 3, name: "Ava Reynolds", role: "Backend Developer", skills: ["Node.js", "Express", "MongoDB", "Nest.js"], profilePic: "./assets/lisbon.jpg" },
-            { id: 4, name: "Olivia Thompson", role: "Blockchain Developer", skills: ["Web3", "JavaScript", "Solidity", "Rust", "Smart contracts"], profilePic: "./assets/rome.jpg"},    
-  ])
+  // const [projets, updateprojets] = useState([
+  //   {
+  //     id: 1,
+  //     name: "Sophia Anderson",
+  //     description: "Frontend Engineer",
+  //     skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
+  //     projetPic: "./assets/bali.jpg"
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Isabella Sullivan",
+  //     description: "Senior Java Developer",
+  //     skills: ["Java", "Spring Boot", "Spring Framework", "Maven"],
+  //     projetPic: "./assets/kyoto.jpg"
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Ava Reynolds",
+  //     description: "Backend Developer",
+  //     skills: ["Node.js", "Express", "MongoDB", "Nest.js"],
+  //     projetPic: "./assets/lisbon.jpg"
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Olivia Thompson",
+  //     description: "Blockchain Developer",
+  //     skills: ["Web3", "JavaScript", "Solidity", "Rust", "Smart contracts"],
+  //     projetPic: "./assets/rome.jpg"
+  //   },    
+  // ])
+
+  const projets = projetsData
     
   
   return (
     <main>
-      {/* <Link href="/">Home</Link>
-      <Link href="/cv">CV</Link>
-      <Link href="/contact">Contact</Link> */}
       <section className="presentation">
         <div className="logo">
           <div className="global">
@@ -43,8 +67,9 @@ export default function Home() {
         </div>
 
         <div className="perso">
-          <h1>Julien</h1>
+          <h1>Julien Brancourt</h1>
           <h2>Développeur web</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tenetur excepturi quidem. Fuga doloremque expedita facilis possimus earum eos qui quasi ad, autem, aspernatur dicta dolores odit nemo nostrum officiis eaque ipsam. Quia molestiae voluptatibus doloribus id eveniet itaque labore unde enim, ipsa dolorum earum nemo repellendus necessitatibus consequuntur doloremque!</p>
         </div>
       </section>
 
@@ -53,15 +78,15 @@ export default function Home() {
       </section>
 
       <section className="projets">
-        <ul className="profile-list">
-          {profiles.map(profile => (
-            <li key={profile.id}>
+        <ul className="projet-list">
+          {projets.map(projet => (
+            <li key={projet.id}>
               <Card
-                id={profile.id}
-                name={profile.name}
-                skills={profile.skills}
-                role={profile.role}
-                profilePic={profile.profilePic}
+                id={projet.id}
+                name={projet.name}
+                tech={projet.tech}
+                description={projet.description}
+                projetPic={projet.projetPic}
               />
             </li>
           ))}

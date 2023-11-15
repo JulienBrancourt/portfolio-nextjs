@@ -1,11 +1,13 @@
- .card {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 4rem;
-    height: 500px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Yeseva+One&display=swap');
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 4rem;
+  height: 500px;
+}
 
 
 .clipped-img {
@@ -57,10 +59,9 @@ transition: clip-path 0.4s ease-in-out;
   width: 75px;
   height: 50px;
   border: none;
-  background: white;
   cursor: pointer;
   margin-left: 19px;
-  background-color: blue;
+  background-color: transparent;
   z-index: 15;
   opacity: 0;
   transition: 
@@ -74,7 +75,7 @@ transition: clip-path 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 1400px) {  
-  .profile-card{
+  .projet-card{
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
@@ -82,5 +83,20 @@ transition: clip-path 0.4s ease-in-out;
 
   .card{
     margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {  
+  .projet-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .card{
+      height: 350px;
+      width: 350px;
+      margin: auto;
+
   }
 }

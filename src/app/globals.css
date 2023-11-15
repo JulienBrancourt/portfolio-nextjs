@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Yeseva+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Yeseva+One&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -12,6 +14,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   background-image: url(/assets/Marble-texture-background.jpg);
+  font-family: Dosis;
 }
 
 section {
@@ -20,24 +23,27 @@ section {
 
 .presentation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
 }
+
 .logo{
   display:flex;
   justify-content:center;
   align-items:center;
+  height: 120px;
+  width: 50px;
 }
 
 .global {
     position:absolute;
-    width:90px;height:52px;
+    width:180px;height:104px;
 }
 
 .detail {
     position:absolute;
-    width:90px;height:52px;
+    width:180px;height:104px;
 }
 
 
@@ -56,12 +62,12 @@ section {
 
 span.one{
   position:absolute;
-  width:4px;height:0%;
+  width:8px;height:0%;
 }
 
 span.two{
     position:absolute;
-    width:4px;height:0%;
+    width:8px;height:0%;
 }
 
 .h1{left:0;
@@ -135,10 +141,10 @@ span.two{
 
 .txt {
     font-family: 'Yeseva One', cursive; 
-    font-size: 70px;
-    letter-spacing: -25px;
-    text-indent: -25px;
-    margin-right: 25px;
+    font-size: 140px;
+    letter-spacing: -50px;
+    text-indent: -50px;
+    margin-right: 50px;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -146,13 +152,30 @@ span.two{
     transform: translate(-50%, -50%); 
 }
 
-
-h1 {
-  color: green;
+.perso {
+  flex-basis: 50%;
+  padding: 10px;
 }
 
+
+h1 {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.perso h2 {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 400;
+  }
+
+  .perso p {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
 /* section projets */
-.profile-list {
+.projet-list {
   list-style-type: none;
   /* max-width: 1100px;  */
   padding: 0 14px;
@@ -164,11 +187,30 @@ h1 {
 }
 
 
-.profile-card{
+.projet-card{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .presentation {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .perso {
+    flex-basis: auto;
+  }
+
+  .perso h2 {
+    padding-left: 10px;
+  }
+
+  .perso p {
+    padding-left: 20px;
+  }
 }
 
 

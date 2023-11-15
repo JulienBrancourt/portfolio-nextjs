@@ -4,7 +4,7 @@ import './Card.css'
 import Modal from '../Modal/Modal';
 import { useState } from 'react';
 
-const Card = ({ id, name, profilePic, skills, role }) => {
+const Card = ({ id, name, projetPic, tech, description }) => {
     const [showModal, setShowModal] = useState(false)
 
     const handleClose = () => { setShowModal(false) }
@@ -14,7 +14,7 @@ const Card = ({ id, name, profilePic, skills, role }) => {
         <div className="card">
             <img
               className="clipped-img"
-              src={profilePic}
+              src={projetPic}
               alt="image du projet"
             />
             <div className="content">
@@ -23,7 +23,7 @@ const Card = ({ id, name, profilePic, skills, role }) => {
             </div>
         </div>
 
-         {showModal && <Modal name={name} role={role} skills={skills} profilePic={profilePic} handleClose={handleClose}/>}
+         {showModal && <Modal name={name} description={description} tech={tech} projetPic={projetPic} handleClose={handleClose}/>}
     </>
   );
 }
