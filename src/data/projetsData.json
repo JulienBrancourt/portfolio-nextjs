@@ -2,8 +2,8 @@
     {
       "id": 1,
       "name": "Movies",
-      "description": "Une app de films qui va chercher les infos de TMDB avec possibilité d'ajouter des favoris",
-      "tech": ["React", "Axio", "Sass", "React-router-dom"],
+      "description": "Une app de films qui va chercher les infos de TMDB avec possibilité d'ajouter des favoris.",
+      "tech": ["React", "Axio", "SCSS", "React-router-dom"],
       "projetPic": "./assets/bali.jpg"
     },
     {
@@ -17,7 +17,7 @@
       "id": 3,
       "name": "Nounou",
       "description": "Site vitrine pour une garde d'enfants",
-      "tech": ["JavaScript", "Sass", "web3forms"],
+      "tech": ["JavaScript", "SCSS", "web3forms"],
       "projetPic": "./assets/lisbon.jpg"
     },
     {

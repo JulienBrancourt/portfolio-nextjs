@@ -81,6 +81,7 @@ export default function Home() {
       </section>
 
       <section className="competences">
+        <h2>Mes compétences</h2>
         {/* <div className="icone">
           <FontAwesomeIcon icon="coffee" />
           <FontAwesomeIcon icon={['fab', 'figma']} />
@@ -119,6 +120,7 @@ export default function Home() {
       </section>
 
       <section className="projets">
+        <h2>Mes réalisations</h2>
         <ul className="projet-list">
           {projets.map(projet => (
             <li key={projet.id}>

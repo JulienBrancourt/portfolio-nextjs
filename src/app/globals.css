@@ -163,14 +163,22 @@ h1 {
   font-size: 70px;
 }
 
-.perso h2 {
+h2 {
     padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+.perso h2 {
+    padding-left: 0;
     padding-top: 10px;
     font-weight: 400;
   }
 
   .perso p {
-    padding-left: 20px;
+    /* padding-left: 20px; */
     padding-top: 10px;
   }
 
@@ -214,13 +222,16 @@ h1 {
   align-items: flex-start ;
   justify-content: space-around;
   color: #000;
-  margin: 10px;
+  margin: 15px;
 }
 
 .cover {
   top: 0;
   position: absolute;
   background-color: lightgray;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(98,151,163,1) 35%, rgba(7,59,71,1) 100%);
+  background: linear-gradient(90deg,  rgba(98,151,163,1) 35%, rgba(7,59,71,0.296437324929972) 100%);
+  color: white;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -238,9 +249,9 @@ h1 {
   transform: rotatey(-80deg);
 }
 
-.titre {
+/* .titre {
   font-weight: bold;
-}
+} */
 
 
 /* section projets */
@@ -273,13 +284,13 @@ h1 {
     flex-basis: auto;
   }
 
-  .perso h2 {
+  /* .perso h2 {
     padding-left: 10px;
   }
 
   .perso p {
     padding-left: 20px;
-  }
+  } */
 }
 
 
