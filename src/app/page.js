@@ -4,6 +4,13 @@ import projetsData from "../data/projetsData.json"
 import Card from './components/Card/Card'
 import Contact from "./components/Contact/Contact";
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faFigma as fabFigma } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faCoffee, faAddressCard, fabFigma);
+
 export default function Home() {
   // const [projets, updateprojets] = useState([
   //   {
@@ -68,13 +75,47 @@ export default function Home() {
 
         <div className="perso">
           <h1>Julien Brancourt</h1>
-          <h2>Développeur web</h2>
+          <h2>Développeur web / front-end</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tenetur excepturi quidem. Fuga doloremque expedita facilis possimus earum eos qui quasi ad, autem, aspernatur dicta dolores odit nemo nostrum officiis eaque ipsam. Quia molestiae voluptatibus doloribus id eveniet itaque labore unde enim, ipsa dolorum earum nemo repellendus necessitatibus consequuntur doloremque!</p>
         </div>
       </section>
 
       <section className="competences">
-
+        {/* <div className="icone">
+          <FontAwesomeIcon icon="coffee" />
+          <FontAwesomeIcon icon={['fab', 'figma']} />
+        </div> */}
+        <div className="containercomp">
+          <ul class="book">
+            <li className="competenceli">Next.js</li>
+            <li className="competenceli">React</li>
+            <li className="competenceli">JavaScript</li>
+            <li className="competenceli">HTML</li>
+            <li className="competenceli">CSS</li>
+            <li className="competenceli">SCSS</li>
+            <div class="cover">
+                <p className="titre">Front-end</p>
+            </div>
+          </ul>
+          <ul class="book">
+            <li className="competenceli">Node.js</li>
+            <li className="competenceli">Express</li>
+            <li className="competenceli">Mongodb</li>
+            <li className="competenceli">T-SQL</li>
+            <div class="cover">
+                <p className="titre">Back-end</p>
+            </div>
+          </ul>
+          <ul class="book">
+            <li className="competenceli">Figma</li>         
+            <li className="competenceli">Github</li>
+                    
+            <li className="competenceli">SEO</li>
+            <div class="cover">
+                <p className="titre">Mais aussi...</p>
+            </div>
+          </ul>
+        </div>
       </section>
 
       <section className="projets">

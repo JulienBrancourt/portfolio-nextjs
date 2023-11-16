@@ -174,6 +174,75 @@ h1 {
     padding-top: 10px;
   }
 
+/* section compétences */
+
+.containercomp {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+
+.competenceli {
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  margin-left: 75px;
+}
+
+.competenceli::before {
+  content: "\2B22";
+  display: inline-block;
+  margin-right: 5px;
+  color: rgb(7, 59, 71);
+  font-size: 0.7em;
+}
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: #cee0e4;
+  box-shadow: 1px 1px 12px rgb(7, 59, 71);
+  transform: preserve-3d;
+  perspective: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start ;
+  justify-content: space-around;
+  color: #000;
+  margin: 10px;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform-origin: 0;
+  box-shadow: 1px 1px 12px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  transition: all 0.5s;
+  transform: rotatey(-80deg);
+}
+
+.titre {
+  font-weight: bold;
+}
+
+
 /* section projets */
 .projet-list {
   list-style-type: none;
