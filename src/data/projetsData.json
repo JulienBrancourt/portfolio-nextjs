@@ -4,27 +4,27 @@
       "name": "Movies",
       "description": "Une app de films qui va chercher les infos de TMDB avec possibilité d'ajouter des favoris.",
       "tech": ["React", "Axio", "SCSS", "React-router-dom"],
-      "projetPic": "./assets/imgmovies.jpg"
+      "projetPic": "./assets/imgmovies.webp"
     },
     {
       "id": 2,
       "name": "Portfolio",
       "description": "Le site sur lequel vous naviguez ! ",
-      "tech": ["Next.js", "React", "web3forms","test"],
-      "projetPic": "./assets/imgportfolio.jpg"
+      "tech": ["Next.js", "React", "web3forms"],
+      "projetPic": "./assets/imgportfolio.webp"
     },
     {
       "id": 3,
       "name": "Nounou",
       "description": "Site vitrine pour une garde d'enfants",
       "tech": ["JavaScript", "SCSS", "web3forms"],
-      "projetPic": "./assets/imgnounou.jpg"
+      "projetPic": "./assets/imgnounou.webp"
     },
     {
       "id": 4,
       "name": "Kasa",
       "description": "App de location immobilière, 7e projet de la formation OpenClassrooms",
       "tech": ["React", "React-router-dom", "Figma", "CSS Modules"],
-      "projetPic": "./assets/imgkasa.jpg"
+      "projetPic": "./assets/imgkasa.webp"
     }
 ]
