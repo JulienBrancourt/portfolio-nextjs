@@ -72,7 +72,6 @@ span.two{
 
 .h1{left:0;
   animation: load1 2s ease-in-out forwards;
-  /* background-color: rgb(7, 59, 71); */
   background: linear-gradient(to top,rgb(98, 151, 163) 5%, rgb(7, 59, 71) 95%);
   
 }
@@ -177,10 +176,9 @@ h2 {
     font-weight: 400;
   }
 
-  .perso p {
-    /* padding-left: 20px; */
-    padding-top: 10px;
-  }
+.perso p {
+  padding-top: 10px;
+}
 
 /* section compétences */
 
@@ -191,7 +189,6 @@ h2 {
   margin: auto;
   justify-content: space-around;
   flex-direction: row;
-
 }
 
 .competenceli {
@@ -206,7 +203,7 @@ h2 {
   display: inline-block;
   margin-right: 5px;
   color: rgb(7, 59, 71);
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .book {
   position: relative;
@@ -214,7 +211,7 @@ h2 {
   width: 220px;
   height: 300px;
   background-color: #cee0e4;
-  box-shadow: 1px 1px 12px rgb(7, 59, 71);
+  box-shadow: 6px 6px 5px 0px rgba(7,59,71,0.77);
   transform: preserve-3d;
   perspective: 2000px;
   display: flex;
@@ -228,9 +225,7 @@ h2 {
 .cover {
   top: 0;
   position: absolute;
-  background-color: lightgray;
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(98,151,163,1) 35%, rgba(7,59,71,1) 100%);
-  background: linear-gradient(90deg,  rgba(98,151,163,1) 35%, rgba(7,59,71,0.296437324929972) 100%);
+  background: linear-gradient(90deg,  rgba(98,151,163,1) 35%, rgba(7,59,71,0.3) 100%);
   color: white;
   width: 100%;
   height: 100%;
@@ -238,7 +233,7 @@ h2 {
   cursor: pointer;
   transition: all 0.5s;
   transform-origin: 0;
-  box-shadow: 1px 1px 12px #000;
+  /* box-shadow: 6px 6px 5px 0px rgba(7,59,71,0.77); */
   display: flex;
   align-items: center;
   justify-content: center;

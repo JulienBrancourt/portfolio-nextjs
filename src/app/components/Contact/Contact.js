@@ -27,6 +27,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <h2>Me contacter</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, sapiente.</p>
       <form onSubmit={onSubmit} className='formulaire'>
         <input type="text" name="name" placeholder="Nom" required/>
         <input type="email" name="email" placeholder="Email" required/>

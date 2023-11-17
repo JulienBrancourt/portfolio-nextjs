@@ -11,17 +11,20 @@ const Card = ({ id, name, projetPic, tech, description }) => {
     
   return (
     <>  
-        <div className="card">
-            <img
-              className="clipped-img"
-              src={projetPic}
-              alt="image du projet"
+      <div className="card">
+        <div className='imgwrap'>
+          <img
+            className="clipped-img"
+            src={projetPic}
+            alt="image du projet"
             />
-            <div className="content">
-                <p className="name">{name}</p>
-                <button className="learn-more" onClick={() => setShowModal(true)}>Voir plus</button>
-            </div>
         </div>
+
+        <div className="content">
+          <p className="name">{name}</p>
+          <button className="learn-more" onClick={() => setShowModal(true)}>Voir plus</button>
+        </div>
+      </div>
 
          {showModal && <Modal name={name} description={description} tech={tech} projetPic={projetPic} handleClose={handleClose}/>}
     </>

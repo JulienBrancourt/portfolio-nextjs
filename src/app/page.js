@@ -12,36 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add(faCoffee, faAddressCard, fabFigma);
 
 export default function Home() {
-  // const [projets, updateprojets] = useState([
-  //   {
-  //     id: 1,
-  //     name: "Sophia Anderson",
-  //     description: "Frontend Engineer",
-  //     skills: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
-  //     projetPic: "./assets/bali.jpg"
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Isabella Sullivan",
-  //     description: "Senior Java Developer",
-  //     skills: ["Java", "Spring Boot", "Spring Framework", "Maven"],
-  //     projetPic: "./assets/kyoto.jpg"
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Ava Reynolds",
-  //     description: "Backend Developer",
-  //     skills: ["Node.js", "Express", "MongoDB", "Nest.js"],
-  //     projetPic: "./assets/lisbon.jpg"
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Olivia Thompson",
-  //     description: "Blockchain Developer",
-  //     skills: ["Web3", "JavaScript", "Solidity", "Rust", "Smart contracts"],
-  //     projetPic: "./assets/rome.jpg"
-  //   },    
-  // ])
 
   const projets = projetsData
     
@@ -82,6 +52,7 @@ export default function Home() {
 
       <section className="competences">
         <h2>Mes compétences</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit esse dolores veniam rerum velit.</p>
         {/* <div className="icone">
           <FontAwesomeIcon icon="coffee" />
           <FontAwesomeIcon icon={['fab', 'figma']} />
@@ -121,6 +92,7 @@ export default function Home() {
 
       <section className="projets">
         <h2>Mes réalisations</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis saepe possimus voluptatem blanditiis eum ad!</p>
         <ul className="projet-list">
           {projets.map(projet => (
             <li key={projet.id}>
