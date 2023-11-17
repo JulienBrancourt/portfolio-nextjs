@@ -10,7 +10,7 @@
       "id": 2,
       "name": "Portfolio",
       "description": "Le site sur lequel vous naviguez ! ",
-      "tech": ["Next.js", "React", "web3forms"],
+      "tech": ["Next.js", "React", "web3forms","test"],
       "projetPic": "./assets/imgportfolio.jpg"
     },
     {
