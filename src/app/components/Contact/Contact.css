@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Yeseva+One&display=swap');
 
+.introContact {
+  margin-left: 10px;
+}
 .formulaire {
   display: flex;
   flex-direction: column;

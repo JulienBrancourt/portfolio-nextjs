@@ -52,7 +52,7 @@ export default function Home() {
 
       <section className="competences">
         <h2>Mes compétences</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit esse dolores veniam rerum velit.</p>
+        <p className="introComp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit esse dolores veniam rerum velit.</p>
         {/* <div className="icone">
           <FontAwesomeIcon icon="coffee" />
           <FontAwesomeIcon icon={['fab', 'figma']} />
@@ -92,7 +92,7 @@ export default function Home() {
 
       <section className="projets">
         <h2>Mes réalisations</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis saepe possimus voluptatem blanditiis eum ad!</p>
+        <p className="introProjets">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis saepe possimus voluptatem blanditiis eum ad!</p>
         <ul className="projet-list">
           {projets.map(projet => (
             <li key={projet.id}>
