@@ -4,7 +4,7 @@ import './Card.css'
 import Modal from '../Modal/Modal';
 import { useState } from 'react';
 
-const Card = ({ id, name, projetPic, tech, description }) => {
+const Card = ({ id, name, projetPic, tech, description, modalPic, lien }) => {
     const [showModal, setShowModal] = useState(false)
 
     const handleClose = () => { setShowModal(false) }
@@ -26,7 +26,15 @@ const Card = ({ id, name, projetPic, tech, description }) => {
         </div>
       </div>
 
-         {showModal && <Modal name={name} description={description} tech={tech} projetPic={projetPic} handleClose={handleClose}/>}
+      {showModal &&
+        <Modal
+          name={name}
+          description={description}
+          tech={tech}
+          projetPic={projetPic}
+          modalPic={modalPic}
+          lien={lien}
+          handleClose={handleClose} />}
     </>
   );
 }

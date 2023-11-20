@@ -46,13 +46,13 @@ export default function Home() {
         <div className="perso">
           <h1>Julien Brancourt</h1>
           <h2>Développeur web / front-end</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tenetur excepturi quidem. Fuga doloremque expedita facilis possimus earum eos qui quasi ad, autem, aspernatur dicta dolores odit nemo nostrum officiis eaque ipsam. Quia molestiae voluptatibus doloribus id eveniet itaque labore unde enim, ipsa dolorum earum nemo repellendus necessitatibus consequuntur doloremque!</p>
+          <p>Bienvenue sur mon portfolio ! Je suis passionné de développement web et spécialisé dans le front-end. En créant des interfaces interactives et intuitives, je m'efforce de donner vie à des designs exceptionnels à travers mes compétences en React et Next.js. Mon approche se caractérise par la combinaison de la créativité artistique et de la rigueur technique, assurant ainsi des expériences utilisateur fluides et agréables.</p>
         </div>
       </section>
 
       <section className="competences">
         <h2>Mes compétences</h2>
-        <p className="introComp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit esse dolores veniam rerum velit.</p>
+        <p className="introComp">Je créé des sites et applications responsives dont le référencement est optimisé. Voici quelques uns de mes outils :</p>
         {/* <div className="icone">
           <FontAwesomeIcon icon="coffee" />
           <FontAwesomeIcon icon={['fab', 'figma']} />
@@ -102,6 +102,8 @@ export default function Home() {
                 tech={projet.tech}
                 description={projet.description}
                 projetPic={projet.projetPic}
+                modalPic={projet.modalPic}
+                lien={projet.lien}
               />
             </li>
           ))}

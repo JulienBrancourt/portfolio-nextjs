@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   background-image: url(/assets/Marble-texture-background.jpg);
   font-family: Dosis;
+  margin: 0 auto;
 }
 
 section {
@@ -248,9 +249,6 @@ h2 {
   transform: rotatey(-80deg);
 }
 
-/* .titre {
-  font-weight: bold;
-} */
 
 
 /* section projets */
