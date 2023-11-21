@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       <section className="competences">
-        <h2>Mes compétences</h2>
+        <h2>À propos de moi</h2>
         <p className="introComp">Je créé des sites et applications responsives dont le référencement est optimisé. Voici quelques uns de mes outils :</p>
         {/* <div className="icone">
           <FontAwesomeIcon icon="coffee" />
@@ -91,8 +91,8 @@ export default function Home() {
       </section>
 
       <section className="projets">
-        <h2>Mes réalisations</h2>
-        <p className="introProjets">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis saepe possimus voluptatem blanditiis eum ad!</p>
+        <h2>Réalisations</h2>
+        <p className="introProjets">Chaque projet reflète ma passion pour le développement.</p>
         <ul className="projet-list">
           {projets.map(projet => (
             <li key={projet.id}>
