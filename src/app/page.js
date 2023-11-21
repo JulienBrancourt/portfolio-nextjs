@@ -46,7 +46,7 @@ export default function Home() {
         <div className="perso">
           <h1>Julien Brancourt</h1>
           <h2>Développeur web / front-end</h2>
-          <p>Bienvenue sur mon portfolio ! Je suis passionné de développement web et spécialisé dans le front-end. En créant des interfaces interactives et intuitives, je m'efforce de donner vie à des designs exceptionnels à travers mes compétences en React et Next.js. Mon approche se caractérise par la combinaison de la créativité artistique et de la rigueur technique, assurant ainsi des expériences utilisateur fluides et agréables.</p>
+          <p>Bienvenue sur mon portfolio ! Je suis passionné de développement web et spécialisé dans le front-end. En créant des interfaces interactives et intuitives, je donne vie à des designs exceptionnels à travers mes compétences en React et Next.js. Mon approche se caractérise par la combinaison de la créativité artistique et de la rigueur technique, assurant ainsi des expériences utilisateur fluides et agréables.</p>
         </div>
       </section>
 
