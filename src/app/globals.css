@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   background-image: url(/assets/Marble-texture-background.jpg);
-  font-family: Dosis;
+  font-family: 'Dosis', sans-serif;
   margin: 0 auto;
 }
 
@@ -139,7 +139,7 @@ span.two{
   100%{bottom:0;height:100%}
 }
 
-.txt {
+.txt-logo {
     font-family: 'Yeseva One', cursive; 
     font-size: 140px;
     letter-spacing: -50px;
@@ -173,6 +173,7 @@ h2 {
 
 .introProjets, .introComp {
   margin-left: 10px;
+  padding-bottom: 30px;
 }
 
 .perso h2 {
@@ -187,6 +188,9 @@ h2 {
 
 /* section compétences */
 
+/* .introComp {
+  padding-bottom: 10px;
+} */
 .containercomp {
   display: flex;
   flex-wrap: wrap;
@@ -224,7 +228,7 @@ h2 {
   align-items: flex-start ;
   justify-content: space-around;
   color: #000;
-  margin: 15px;
+  margin: 0 15px 15px 15px;
 }
 
 .cover {
@@ -263,13 +267,32 @@ h2 {
   gap: 25px;
 }
 
+/* section footer */
+footer {
+  background-color: #000;
+  height: 70px;
+}
+.liste-footer {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-.projet-card{
+.li-footer {
+  list-style-type: none;
+}
+
+.lien-footer {
+  text-decoration: none;
+}
+
+/* .projet-card{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 4rem;
-}
+} */
 
 @media screen and (max-width: 800px) {
   .presentation {

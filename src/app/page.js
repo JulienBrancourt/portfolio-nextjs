@@ -22,7 +22,7 @@ export default function Home() {
         <div className="logo">
           <div className="global">
             <div className="detail">
-              <span className="txt">JB</span>
+              <span className="txt-logo">JB</span>
               <span className="one h6"></span>
               <span className="two h3"></span>
             </div>
@@ -46,7 +46,7 @@ export default function Home() {
         <div className="perso">
           <h1>Julien Brancourt</h1>
           <h2>Développeur web / front-end</h2>
-          <p>Bienvenue sur mon portfolio ! Je suis passionné de développement web et spécialisé dans le front-end. En créant des interfaces interactives et intuitives, je m'efforce de donner vie à des designs exceptionnels à travers mes compétences en React et Next.js. Mon approche se caractérise par la combinaison de la créativité artistique et de la rigueur technique, assurant ainsi des expériences utilisateur fluides et agréables.</p>
+          <p>Bienvenue sur mon portfolio ! Je suis passionné de développement web et spécialisé dans le front-end. En créant des interfaces interactives et intuitives, je m'efforce de donner vie à des designs exceptionnels à travers mes compétences en React et Next.js.</p>
         </div>
       </section>
 
@@ -58,32 +58,32 @@ export default function Home() {
           <FontAwesomeIcon icon={['fab', 'figma']} />
         </div> */}
         <div className="containercomp">
-          <ul class="book">
+          <ul className="book">
             <li className="competenceli">Next.js</li>
             <li className="competenceli">React</li>
             <li className="competenceli">JavaScript</li>
             <li className="competenceli">HTML</li>
             <li className="competenceli">CSS</li>
             <li className="competenceli">SCSS</li>
-            <div class="cover">
+            <div className="cover">
                 <p className="titre">Front-end</p>
             </div>
           </ul>
-          <ul class="book">
+          <ul className="book">
             <li className="competenceli">Node.js</li>
             <li className="competenceli">Express</li>
             <li className="competenceli">Mongodb</li>
             <li className="competenceli">T-SQL</li>
-            <div class="cover">
+            <div className="cover">
                 <p className="titre">Back-end</p>
             </div>
           </ul>
-          <ul class="book">
+          <ul className="book">
             <li className="competenceli">Figma</li>         
             <li className="competenceli">Github</li>
                     
             <li className="competenceli">SEO</li>
-            <div class="cover">
+            <div className="cover">
                 <p className="titre">Mais aussi...</p>
             </div>
           </ul>
@@ -92,7 +92,7 @@ export default function Home() {
 
       <section className="projets">
         <h2>Réalisations</h2>
-        <p className="introProjets">Chaque projet reflète ma passion pour le développement.</p>
+        <p className="introProjets">Chaque projet reflète ma passion pour le développement, vous trouverez ici mes dernières créations.</p>
         <ul className="projet-list">
           {projets.map(projet => (
             <li key={projet.id}>
@@ -114,7 +114,14 @@ export default function Home() {
       <section className="contact">
             <Contact/>
       </section>
-       
+      <footer>
+        <ul className="liste-footer">
+          <li className="li-footer"><a href="" className="lien-footer" target="_blank">Github</a></li>
+          <li className="li-footer"><a href="" className="lien-footer" target="_blank">LinkedIn</a></li>  
+          <li className="li-footer"><a href="" className="lien-footer" target="_blank">Mentions légales</a></li>
+        </ul>
+      </footer> 
     </main>
+    
   );
 }
