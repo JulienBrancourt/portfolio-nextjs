@@ -14,7 +14,8 @@
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 450px;
+  margin: 0 10px;
   width: 100%;
   text-align: center;
   position: relative;
@@ -22,6 +23,10 @@
 
 .legal-content h2 {
   margin-bottom: 10px;
+}
+
+.legal-content h3 {
+  margin-top: 5px;
 }
 
 /* .legal-content button {
