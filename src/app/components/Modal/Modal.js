@@ -8,8 +8,8 @@ const Modal = ({name, projetPic, handleClose, tech, description, modalPic, lien}
       <div className="modal">
         <div class="container-close" onClick={() => handleClose()}>  
           <div class="circle">
-          <div class="line first"></div>
-          <div class="line second"></div>
+            <div class="line first"></div>
+            <div class="line second"></div>
           </div>                
         </div>
         {modalPic ? 

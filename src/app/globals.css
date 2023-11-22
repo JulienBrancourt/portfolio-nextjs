@@ -269,8 +269,9 @@ h2 {
 
 /* section footer */
 footer {
-  background-color: #000;
   height: 70px;
+  border-top:1px solid rgb(7,59,71);
+  margin-top: 50px;
 }
 .liste-footer {
   display: flex;
@@ -285,14 +286,14 @@ footer {
 
 .lien-footer {
   text-decoration: none;
+  color: rgb(7,59,71);
+  font-weight: 600;
 }
 
-/* .projet-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 4rem;
-} */
+.icon {
+  color: rgba(7,59,71,0.77);
+  font-size: 18px;
+}
 
 @media screen and (max-width: 800px) {
   .presentation {
@@ -303,14 +304,6 @@ footer {
   .perso {
     flex-basis: auto;
   }
-
-  /* .perso h2 {
-    padding-left: 10px;
-  }
-
-  .perso p {
-    padding-left: 20px;
-  } */
 }
 
 

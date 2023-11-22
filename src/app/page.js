@@ -3,18 +3,30 @@ import React, { useState } from "react";
 import projetsData from "../data/projetsData.json"
 import Card from './components/Card/Card'
 import Contact from "./components/Contact/Contact";
+import Legal from "./components/Legal/Legal";
 
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee, faAddressCard } from '@fortawesome/free-solid-svg-icons';
-import { faFigma as fabFigma } from '@fortawesome/free-brands-svg-icons';
+import { faFigma as fabFigma, faGithub as fabGithub, faLinkedin as fabLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(faCoffee, faAddressCard, fabFigma);
+// Assurez-vous d'initialiser la bibliothèque FontAwesome
+// config.autoAddCss = false; 
+library.add(faCoffee, faAddressCard, fabFigma, fabGithub, fabLinkedin);
 
 export default function Home() {
 
-  const projets = projetsData
-    
+  const [legalVisible, setLegalVisible] = useState(false);
+
+  const openLegal = () => {
+    setLegalVisible(true);
+  };
+
+  const closeLegal = () => {
+    setLegalVisible(false);
+  };
+
+  const projets = projetsData  
   
   return (
     <main>
@@ -53,10 +65,6 @@ export default function Home() {
       <section className="competences">
         <h2>À propos de moi</h2>
         <p className="introComp">Je créé des sites et applications responsives dont le référencement est optimisé. Voici quelques uns de mes outils :</p>
-        {/* <div className="icone">
-          <FontAwesomeIcon icon="coffee" />
-          <FontAwesomeIcon icon={['fab', 'figma']} />
-        </div> */}
         <div className="containercomp">
           <ul className="book">
             <li className="competenceli">Next.js</li>
@@ -116,11 +124,27 @@ export default function Home() {
       </section>
       <footer>
         <ul className="liste-footer">
-          <li className="li-footer"><a href="" className="lien-footer" target="_blank">Github</a></li>
-          <li className="li-footer"><a href="" className="lien-footer" target="_blank">LinkedIn</a></li>  
-          <li className="li-footer"><a href="" className="lien-footer" target="_blank">Mentions légales</a></li>
+          <li className="li-footer">
+            <a href="https://github.com/JulienBrancourt" className="lien-footer" target="_blank">
+              <FontAwesomeIcon  className="icon" icon={['fab', 'github']} />
+            </a>
+          </li>  
+            
+          <li className="li-footer">
+            <a href="#" className="lien-footer" onClick={(e) => { e.preventDefault(); openLegal(); }}>
+              Mentions légales
+            </a>
+          </li>
+          
+          <li className="li-footer">
+            <a href="https://www.linkedin.com/in/julien-brancourt/" className="lien-footer" target="_blank">
+              <FontAwesomeIcon className="icon" icon={['fab', 'linkedin']} />
+            </a>
+          </li>
         </ul>
-      </footer> 
+      </footer>
+      
+      {legalVisible && <Legal onClose={closeLegal} />}
     </main>
     
   );
