@@ -11,14 +11,29 @@
 }
 
 .legal-content {
-  background: #fff;
+  background: white;
   padding: 20px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   max-width: 450px;
   margin: 0 10px;
   width: 100%;
   text-align: center;
   position: relative;
+  height: 450px;
+  overflow-y: scroll;
+  scrollbar-color: rgb(7,59,71);
+  scrollbar-width: thin;
+}
+
+.legal-content::-webkit-scrollbar {
+  width: 8px;}
+
+.legal-content::-webkit-scrollbar-track {
+  background: white;
+}
+
+.legal-content::-webkit-scrollbar-thumb {
+  background-color: rgb(7,59,71);
 }
 
 .legal-content h2 {
