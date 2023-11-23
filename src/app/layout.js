@@ -20,6 +20,13 @@ export default function RootLayout({ children }) {
     })(window,document,'script','dataLayer','GTM-T8WZRZBM');
   `; 
 
+  const gtagScript = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N0M6MV1453');
+  `;
+
   return (
     <html lang="fr">
       <Head>
@@ -31,6 +38,8 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content="Portfolio de Julien Brancourt, développeur web, développeur front-end React & Next.js" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N0M6MV1453"></script>
+        <script dangerouslySetInnerHTML={{ __html: gtagScript }} />
       </Head>
       <body>
         {children}
