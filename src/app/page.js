@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import projetsData from "../data/projetsData.json"
+import Cookies from "./components/Cookies/Cookies";
 import Card from './components/Card/Card'
 import Contact from "./components/Contact/Contact";
 import Legal from "./components/Legal/Legal";
@@ -30,6 +31,7 @@ export default function Home() {
   
   return (
     <main>
+      <Cookies />
       <section className="presentation">
         <div className="logo">
           <div className="global">
@@ -143,6 +145,8 @@ export default function Home() {
           </li>
         </ul>
       </footer>
+
+      
       
       {legalVisible && <Legal onClose={closeLegal} />}
     </main>
