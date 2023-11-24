@@ -16,8 +16,8 @@ const Legal = ({ onClose }) => {
         <h3>Partage des données</h3> 
         <p>Vos données ne sont pas partagées avec des tiers, à moins d'une obligation légale.</p> 
 
-        <h3>Sécurité des données</h3> 
-        <p>Des mesures de sécurité ont été mises en place pour protéger vos données contre l'accès, la modification ou la divulgation non autorisés.</p> 
+        {/* <h3>Sécurité des données</h3> 
+        <p>Des mesures de sécurité ont été mises en place pour protéger vos données contre l'accès, la modification ou la divulgation non autorisés.</p>  */}
 
         <h3>Vos droits</h3> 
         <p>Conformément aux lois applicables, vous avez le droit d'accéder, de rectifier ou de supprimer vos données personnelles.</p> 

@@ -7,13 +7,14 @@ import Contact from "./components/Contact/Contact";
 import Legal from "./components/Legal/Legal";
 
 import { library, config } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+// import { faCoffee, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faFigma as fabFigma, faGithub as fabGithub, faLinkedin as fabLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Assurez-vous d'initialiser la bibliothèque FontAwesome
 // config.autoAddCss = false; 
-library.add(faCoffee, faAddressCard, fabFigma, fabGithub, fabLinkedin);
+// library.add(faCoffee, faAddressCard, fabFigma, fabGithub, fabLinkedin);
+library.add(fabFigma, fabGithub, fabLinkedin);
 
 export default function Home() {
 
@@ -127,19 +128,31 @@ export default function Home() {
       <footer>
         <ul className="liste-footer">
           <li className="li-footer">
-            <a href="https://github.com/JulienBrancourt" className="lien-footer" target="_blank">
+            <a
+              href="https://github.com/JulienBrancourt"
+              className="lien-footer"
+              target="_blank"
+              aria-label="lien vers Github">
               <FontAwesomeIcon  className="icon" icon={['fab', 'github']} />
             </a>
           </li>  
             
           <li className="li-footer">
-            <a href="#" className="lien-footer" onClick={(e) => { e.preventDefault(); openLegal(); }}>
+            <a
+              href="#"
+              className="lien-footer"
+              onClick={(e) => { e.preventDefault(); openLegal(); }}
+              aria-label="Mentions légales">
               Mentions légales
             </a>
           </li>
           
           <li className="li-footer">
-            <a href="https://www.linkedin.com/in/julien-brancourt/" className="lien-footer" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/julien-brancourt/"
+              className="lien-footer"
+              target="_blank"
+              aria-label="lien vers LinkedIn">
               <FontAwesomeIcon className="icon" icon={['fab', 'linkedin']} />
             </a>
           </li>
