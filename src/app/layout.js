@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <Head>
         {/* <script dangerouslySetInnerHTML={{ __html: gtmScript }} /> */}
-        {(process.env.NODE_ENV === 'production') &&
+        {/* {(process.env.NODE_ENV === 'production') &&
         <script dangerouslySetInnerHTML={{
             __html: `(function (w, d, s, l, i) {
                     w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
                     j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
                 })(window, document, 'script', 'dataLayer', 'GTM-T8WZRZBM');`
         }}></script>
-    }
+    } */}
 
         <meta name='robots' content='index, follow' />
         <meta name='keywords' content='React, Next.js, front-end, développeur web, Julien Brancourt, portfolio' />
@@ -41,6 +41,11 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
       </Head>
       <body>
+        {(process.env.NODE_ENV === 'production') &&
+        <noscript dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8WZRZBM" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+        }}></noscript>
+        }
         {children}
       </body>
     </html>

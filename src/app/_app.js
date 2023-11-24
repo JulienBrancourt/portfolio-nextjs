@@ -1,7 +1,10 @@
+import { useEffect } from 'react';
 import TagManager from 'react-gtm-module';
 
-const tagManagerArgs = {
-gtmId: 'GTM-T8WZRZBM'
+function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+      TagManager.initialize({ gtmId: 'GTM-T8WZRZBM' });
+  }, []);
+  return <Component {...pageProps}/>
 }
-
-TagManager.initialize(tagManagerArgs)
+export default MyApp
