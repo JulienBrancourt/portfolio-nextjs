@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import TagManager from 'react-gtm-module';
 import './globals.css';
 
 export const metadata = {
@@ -17,11 +16,7 @@ export default function RootLayout({ children }) {
   //   })(window,document,'script','dataLayer','GTM-T8WZRZBM');
   // `;
 
-  const tagManagerArgs = {
-    gtmId: 'GTM-T8WZRZBM'
-  }
 
-  TagManager.initialize(tagManagerArgs)
 
   return (
     <html lang="fr">
