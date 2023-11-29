@@ -7,13 +7,9 @@ import Contact from "./components/Contact/Contact";
 import Legal from "./components/Legal/Legal";
 
 import { library, config } from '@fortawesome/fontawesome-svg-core';
-// import { faCoffee, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faFigma as fabFigma, faGithub as fabGithub, faLinkedin as fabLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// Assurez-vous d'initialiser la bibliothèque FontAwesome
-// config.autoAddCss = false; 
-// library.add(faCoffee, faAddressCard, fabFigma, fabGithub, fabLinkedin);
 library.add(fabFigma, fabGithub, fabLinkedin);
 
 export default function Home() {
@@ -67,7 +63,7 @@ export default function Home() {
 
       <section className="competences">
         <h2>À propos de moi</h2>
-        <p className="introComp">Je créé des sites et applications responsives dont le référencement est optimisé. Voici quelques uns de mes outils :</p>
+        <p className="introComp">Je crée des sites et applications responsives dont le référencement est optimisé. Voici quelques uns de mes outils :</p>
         <div className="containercomp">
           <ul className="book">
             <li className="competenceli">Next.js</li>

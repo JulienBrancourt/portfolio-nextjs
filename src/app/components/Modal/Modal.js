@@ -32,9 +32,8 @@ const Modal = ({name, projetPic, handleClose, tech, description, modalPic, lien}
             </ul>
           </div>
         </div>
-          {/* <button className="close-btn" onClick={()=> handleClose()}>x</button> */}
           
-        </div>
+      </div>
 
     </div>
   )

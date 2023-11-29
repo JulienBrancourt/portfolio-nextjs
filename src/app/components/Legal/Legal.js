@@ -11,22 +11,19 @@ const Legal = ({ onClose }) => {
         <p>Ce site utilise des cookies pour améliorer l'expérience utilisateur et collecter des données statistiques anonymes sur la fréquentation du site via Google Analytics.</p>
 
         <h3>Utilisation des données</h3> 
-        <p>Les données collectées servent exclusivement à analyser le comportement des visiteurs pour améliorer la qualité du site et de son contenu.</p> 
+        <p>Les données fournies seront utilisées uniquement dans le but pour lequel vous les avez partagées. Elles peuvent être utilisées pour répondre à vos demandes, personnaliser votre expérience sur le site, et améliorer nos services. Elles ne seront pas utilisées à des fins autres que celles explicitement indiquées.</p> 
 
         <h3>Partage des données</h3> 
         <p>Vos données ne sont pas partagées avec des tiers, à moins d'une obligation légale.</p> 
 
-        {/* <h3>Sécurité des données</h3> 
-        <p>Des mesures de sécurité ont été mises en place pour protéger vos données contre l'accès, la modification ou la divulgation non autorisés.</p>  */}
-
         <h3>Vos droits</h3> 
-        <p>Conformément aux lois applicables, vous avez le droit d'accéder, de rectifier ou de supprimer vos données personnelles.</p> 
+        <p>Vous avez le droit de consulter, corriger, mettre à jour ou supprimer les données personnelles que vous avez partagées. Vous pouvez exercer ces droits en me contactant à l'adresse fournie dans la section "Contact" ci-dessous.</p> 
 
         <h3>Modifications de cette politique</h3> 
-        <p>Cette Politique de Confidentialité peut être mise à jour. Les modifications seront affichées sur cette page.</p> 
+        <p>Toute modification sera publiée sur cette page avec la date de la dernière mise à jour.</p> 
 
         <h3>Contact</h3> 
-        <p>Pour toute question concernant cette Politique de Confidentialité, vous pouvez me contacter via le formulaire de contact sur ce site.</p>
+        <p>Si vous avez des questions concernant cette politique de confidentialité ou si vous souhaitez exercer vos droits en matière de données personnelles, vous pouvez me contacter à brancourt.julien@hotmail.fr ou via le formulaire de contact sur ce site.</p>
               
         <div class="container-close" onClick={onClose}>  
             <div class="circle">
@@ -34,7 +31,6 @@ const Legal = ({ onClose }) => {
                 <div class="line second"></div>
             </div>
         </div>
-        {/* <button onClick={onClose}>Fermer</button> */}
       </div>
     </div>
   );
