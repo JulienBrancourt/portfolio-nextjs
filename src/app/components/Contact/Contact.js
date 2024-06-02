@@ -25,18 +25,20 @@ const Contact = () => {
     }
   };
   return (
-    <div className="contact">
-      <h2>Me contacter</h2>
-      <p className='introContact'>Vous avez un projet ? N'hésitez pas à me contacter !</p>
-      <form onSubmit={onSubmit} className='formulaire'>
-        <input type="text" name="name" placeholder="Nom" required/>
-        <input type="email" name="email" placeholder="Email" required/>
-        <textarea name="message" placeholder="Votre message" required></textarea>
-        <input type="submit" className='submit'/>
-      </form>
-      <span>{result}</span>
-    </div>
-  )
+		<div className="contact">
+			<form onSubmit={onSubmit} className="formulaire">
+				<input type="text" name="name" placeholder="Nom" required />
+				<input type="email" name="email" placeholder="Email" required />
+				<textarea
+					name="message"
+					placeholder="Votre message"
+					required
+				></textarea>
+				<input type="submit" className="submit" />
+			</form>
+			<span>{result}</span>
+		</div>
+	);
 }
 
 export default Contact
