@@ -7,7 +7,13 @@ import { useState } from 'react';
 const Card = ({ id, name, projetPic, tech, description, modalPic, lien }) => {
     const [showModal, setShowModal] = useState(false)
 
-    const handleClose = () => { setShowModal(false) }
+  const handleClose = () => { setShowModal(false); }
+  
+  const handleButtonClick = () => {
+		if (document.querySelector(".card:hover")) {
+			setShowModal(true);
+		}
+	};
     
   return (
     <>  
