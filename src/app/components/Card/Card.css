@@ -68,7 +68,9 @@
   background-color: transparent;
   z-index: 1;
    opacity: 0;
-  pointer-events: none;
+    outline: none;
+  -webkit-tap-highlight-color: transparent;
+  /* pointer-events: none; */
   transition: 
     transform 0.5s ease-in-out, 
     opacity 0.3s ease-in-out; 
@@ -81,18 +83,24 @@
   pointer-events: auto;
     animation-duration: 0.5s;
   animation-name: slideclic;
-  visibility: visible;
+  /* visibility: visible; */
 }
 
 @keyframes slideclic {
   0% {
-        visibility: hidden;
+        /* visibility: hidden; */
+  pointer-events: none;
+
     }
     50% {
-        visibility: hidden;
+        /* visibility: hidden; */
+  pointer-events: auto;
+
     }
     100% {
-        visibility: visible;
+        /* visibility: visible; */
+  pointer-events: auto;
+
     }
 }
 
