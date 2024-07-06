@@ -79,12 +79,12 @@ export default function Home() {
 
 				<div className="perso">
 					<h1>Julien Brancourt</h1>
-					<h2>Développeur web / front-end</h2>
+					<h2>Développeur Full Stack Java</h2>
 					<p className="fade">
 						Bienvenue sur mon portfolio ! Je suis passionné de développement web
 						et spécialisé dans le front-end. En créant des interfaces
 						interactives et intuitives, je m'efforce de donner vie à des designs
-						exceptionnels à travers mes compétences en React et Next.js.
+						exceptionnels à travers mes compétences en Java, React et Next.js.
 					</p>
 				</div>
 			</section>
@@ -97,29 +97,31 @@ export default function Home() {
 				</p>
 				<div className="containercomp">
 					<ul className="book">
-						<li className="competenceli">Next.js</li>
-						<li className="competenceli">React</li>
-						<li className="competenceli">JavaScript</li>
-						<li className="competenceli">HTML</li>
-						<li className="competenceli">CSS</li>
-						<li className="competenceli">SCSS</li>
+						<li className="competenceli">React, Next.js</li>
+						<li className="competenceli">Angular</li>
+						<li className="competenceli">JS, TS</li>
+						<li className="competenceli">SCSS, Bootstrap</li>
 						<div className="cover">
 							<p className="titre">Front-end</p>
 						</div>
 					</ul>
 					<ul className="book">
-						<li className="competenceli">Node.js</li>
-						<li className="competenceli">Express</li>
+						<li className="competenceli">Java JEE</li>
+						<li className="competenceli">Spring, Spring Boot</li>
+						<li className="competenceli">Hibernate</li>
+						<li className="competenceli">Node.js, Express</li>
 						<li className="competenceli">Mongodb</li>
-						<li className="competenceli">T-SQL</li>
+						<li className="competenceli">SQL</li>
 						<div className="cover">
 							<p className="titre">Back-end</p>
 						</div>
 					</ul>
 					<ul className="book">
 						<li className="competenceli">Figma</li>
-						<li className="competenceli">Github</li>
-
+						<li className="competenceli">Git</li>
+						<li className="competenceli">Docker</li>
+						<li className="competenceli">Agile</li>
+						<li className="competenceli">TDD</li>
 						<li className="competenceli">SEO</li>
 						<div className="cover">
 							<p className="titre">Mais aussi...</p>

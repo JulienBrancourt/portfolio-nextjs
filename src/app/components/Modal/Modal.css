@@ -145,7 +145,7 @@
   @media screen and (max-width: 500px) {
     .modal { 
     max-width: 350px;
-    height: 350px;
+    height: 375px;
     background-color: #ffff;
     padding: 0;
     }
