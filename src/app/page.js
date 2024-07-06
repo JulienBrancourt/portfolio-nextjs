@@ -82,9 +82,10 @@ export default function Home() {
 					<h2>Développeur Full Stack Java</h2>
 					<p className="fade">
 						Bienvenue sur mon portfolio ! Je suis passionné de développement web
-						et spécialisé dans le front-end. En créant des interfaces
-						interactives et intuitives, je m'efforce de donner vie à des designs
-						exceptionnels à travers mes compétences en Java, React et Next.js.
+						et spécialisé dans le front-end. En créant des applications web
+						robustes et innovantes, mon objectif est de transformer des concepts
+						de design en solutions logicielles exceptionnelles à travers mes
+						compétences en Java, React et Next.js.
 					</p>
 				</div>
 			</section>
